@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <soup.neumorphism.NeumorphCardView
+
+        android:id="@+id/cardViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorLight="@color/cardview_light_background"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:background="@null"/>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphCardView
+
+        android:id="@+id/cardViewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewEmail"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorLight="@color/cardview_light_background"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:background="@null"/>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@id/cardViewPassword"
+        app:layout_constraintStart_toStartOf="@id/cardViewPassword"
+        app:layout_constraintTop_toBottomOf="@id/cardViewPassword"
+        app:neumorph_shadowElevation="6dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
